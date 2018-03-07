@@ -1,24 +1,16 @@
-body {
-  background: #b2bec3;
-  background-image: "imgs/1.png";
-  background-repeat: no-repeat;
-  background-position: outo outo; }
+.message, .success, .error, .warning {
+  -webkit-border: 1px solid #ccc;
+  -moz-border: 1px solid #ccc;
+  -ms-border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
 
-ul {
-  text-align: center; }
-  ul li {
-    float: right;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 20px;
-    -webkit-border: 1px solid #000001;
-    -moz-border: 1px solid #000001;
-    -ms-border: 1px solid #000001;
-    border: 1px solid #000001; }
-    ul li a {
-      font-size: 10px;
-      font-family: Tahoma, sans-serif;
-      color: 508270;
-      text-decoration: none; }
-      ul li a:hover {
-        text-decoration: underline; }
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }

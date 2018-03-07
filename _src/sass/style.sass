@@ -2,21 +2,19 @@
 @import "mixins"
 
 
-body
-  background: $bg
-  @include bg-image("imgs/1.png", no-repeat)
-ul
-  text-align: center
-  li
-    float: right
-    @include padding
-    @include border(1px solid rgba(0,0,0 +1,1))
-    a
-      font:
-        size: $font-size / 2
-        family: $font1
-      color: $color1 + $color2
-      text-decoration: none
-      &:hover
-        text:
-          decoration: underline
+.message
+  @include border(1px solid #ccc)
+  padding: 10px
+  color: #333
+
+.success
+  @extend .message
+  border-color: green
+
+.error
+  @extend .message
+  border-color: red
+
+.warning
+  @extend .message
+  border-color: yellow
