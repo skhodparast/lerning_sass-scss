@@ -27,7 +27,7 @@ gulp.task('reload_watch', function(){
 })
 
 gulp.task('watch' , function(){
-  gulp.watch('_src/sass/**/*' , ['sass2css'])
+  gulp.watch('_src/sass/**/*' , ['sass2css', browserSync.reload])
   gulp.watch('index.html' , browserSync.reload)
 	gulp.watch('_dest/css/*' , browserSync.reload)
 	gulp.watch('gulpfile.js' , browserSync.reload)

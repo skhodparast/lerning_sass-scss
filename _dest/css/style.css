@@ -1,5 +1,8 @@
 body {
-  background: #b2bec3; }
+  background: #b2bec3;
+  background-image: "imgs/1.png";
+  background-repeat: no-repeat;
+  background-position: outo outo; }
 
 ul {
   text-align: center; }
@@ -7,7 +10,11 @@ ul {
     float: right;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    -webkit-border: 1px solid black;
+    -moz-border: 1px solid black;
+    -ms-border: 1px solid black;
+    border: 1px solid black; }
     ul li a {
       font-size: 20px;
       font-family: Tahoma, sans-serif;

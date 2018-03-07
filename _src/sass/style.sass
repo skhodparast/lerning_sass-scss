@@ -1,15 +1,16 @@
-@import "variable"
+@import "variables"
+@import "mixins"
+
 
 body
   background: $bg
+  @include bg-image("imgs/1.png", no-repeat)
 ul
   text-align: center
   li
     float: right
-    padding:
-      right: 10px
-      left: 10px
-      top: 20px
+    @include padding
+    @include border(1px solid rgba(0,0,0,1))
     a
       font:
         size: $font-size

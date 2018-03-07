@@ -1,0 +1,18 @@
+@mixin padding
+  padding:
+    right: 10px
+    left: 10px
+    top: 20px
+
+
+@mixin border($border)
+  -webkit-border: $border
+  -moz-border: $border
+  -ms-border: $border
+  border: $border
+
+
+@mixin bg-image($url, $repeat: repeat, $position: outo outo)
+  background-image: $url
+  background-repeat: $repeat
+  background-position: $position
