@@ -10,12 +10,12 @@ ul
   li
     float: right
     @include padding
-    @include border(1px solid rgba(0,0,0,1))
+    @include border(1px solid rgba(0,0,0 +1,1))
     a
       font:
-        size: $font-size
+        size: $font-size / 2
         family: $font1
-      color: #fff
+      color: $color1 + $color2
       text-decoration: none
       &:hover
         text:
