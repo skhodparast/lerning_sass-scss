@@ -1,16 +1,2 @@
-.message, .success, .error, .warning {
-  -webkit-border: 1px solid #ccc;
-  -moz-border: 1px solid #ccc;
-  -ms-border: 1px solid #ccc;
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
-
-.success {
-  border-color: green; }
-
-.error {
-  border-color: red; }
-
-.warning {
-  border-color: yellow; }
+#sidebar {
+  width: 490px; }
