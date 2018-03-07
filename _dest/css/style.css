@@ -1,2 +1,15 @@
 #sidebar {
-  width: 490px; }
+  width: 240px; }
+
+#header {
+  width: 1190px; }
+  @media only screen and (max-width: 1200px) {
+    #header {
+      display: none; } }
+
+#footer {
+  background: #ccc;
+  height: 200px; }
+  @media only screen and (max-width: 768px) {
+    #footer {
+      opacity: 0; } }

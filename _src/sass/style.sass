@@ -2,5 +2,23 @@
 @import "mixins"
 @import "function"
 
-#sidebar
-  width: grid-width(10)
+@if($grid > 30)
+  #sidebar
+    width: grid-width(30)
+@else if($grid == 20)
+  #sidebar
+    width: grid-width(20)
+@else
+  #sidebar
+    width: grid-width(5)
+
+#header
+  width: grid-width(24)
+  @include MediaQuery(l)
+    display: none
+
+#footer
+  background: #ccc
+  height: 200px
+  @include MediaQuery(s)
+    opacity: 0
