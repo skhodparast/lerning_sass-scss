@@ -1,8 +1,16 @@
 body {
-  background: #FFFFFF; }
+  background: #b2bec3; }
 
-body {
-  background: #000000; }
-
-body {
-  background: #ffdfff; }
+ul {
+  text-align: center; }
+  ul li {
+    float: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px; }
+    ul li a {
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none; }
+      ul li a:hover {
+        text-decoration: underline; }
