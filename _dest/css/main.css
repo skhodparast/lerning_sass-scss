@@ -9,7 +9,8 @@ ul {
     padding-left: 10px;
     padding-top: 20px; }
     ul li a {
-      font-size: 16px;
+      font-size: 20px;
+      font-family: Tahoma, sans-serif;
       color: #fff;
       text-decoration: none; }
       ul li a:hover {
