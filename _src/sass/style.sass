@@ -2,23 +2,29 @@
 @import "mixins"
 @import "function"
 
-@if($grid > 30)
-  #sidebar
-    width: grid-width(30)
-@else if($grid == 20)
-  #sidebar
-    width: grid-width(20)
-@else
-  #sidebar
-    width: grid-width(5)
+@for $i from 1 to 3
+  .for-to-#{$i}
+    width: 100 * $i
 
-#header
-  width: grid-width(24)
-  @include MediaQuery(l)
-    display: none
+@for $i from 1 through 3
+  .for-through-#{$i}
+    width: 100 * $i
 
-#footer
-  background: #ccc
-  height: 200px
-  @include MediaQuery(s)
-    opacity: 0
+$i: 0
+@while ($i < 2)
+  .while-#{$i}
+    width: 100
+  $i: $i + 1
+
+@each $i in 1,2
+  .each-#{$i}
+    width: 100 * $i
+
+@each $course, $color in (javaScript, yellow),(laravel, red)
+  .#{$course}-icon
+    background-image: url('/imgs/#{$course}.png')
+    border: 2px solid $color
+
+@each $header, $size in (h1: 2em, h2: 1.5em)
+  #{$header}
+    font-size: $size

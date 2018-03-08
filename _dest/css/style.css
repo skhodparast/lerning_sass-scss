@@ -1,15 +1,40 @@
-#sidebar {
-  width: 240px; }
+.for-to-1 {
+  width: 100; }
 
-#header {
-  width: 1190px; }
-  @media only screen and (max-width: 1200px) {
-    #header {
-      display: none; } }
+.for-to-2 {
+  width: 200; }
 
-#footer {
-  background: #ccc;
-  height: 200px; }
-  @media only screen and (max-width: 768px) {
-    #footer {
-      opacity: 0; } }
+.for-through-1 {
+  width: 100; }
+
+.for-through-2 {
+  width: 200; }
+
+.for-through-3 {
+  width: 300; }
+
+.while-0 {
+  width: 100; }
+
+.while-1 {
+  width: 100; }
+
+.each-1 {
+  width: 100; }
+
+.each-2 {
+  width: 200; }
+
+.javaScript-icon {
+  background-image: url("/imgs/javaScript.png");
+  border: 2px solid yellow; }
+
+.laravel-icon {
+  background-image: url("/imgs/laravel.png");
+  border: 2px solid red; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
