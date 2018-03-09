@@ -1,10 +1,15 @@
-@mixin MediaQuery($canvas)
-  @if $canvas == l
-    @media only screen and (max-width: $l)
-      @content
-  @else if $canvas == m
-    @media only screen and (max-width: $m)
-      @content
-  @else if $canvas == s
-    @media only screen and (max-width: $s)
-      @content
+@mixin clearfix
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+@mixin grid-loop($name)
+  @for $i from 0 through $grid-colums
+    @if $i !=0
+      .col-#{$name}-#{$i}
+        width: percentage($i/$grid-colums)
+    .col-#{$name}-offset-#{$i}
+      margin-left: percentage($i/$grid-colums)
